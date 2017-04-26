@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.saad.project.MainActivity"
-    android:background="@android:color/holo_blue_dark">
+    android:background="@color/bgColor">
 
 
     <ImageView
@@ -30,7 +30,7 @@
         android:padding="10dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/btn_preference"
-        android:background="@color/colorPrimary"
+        android:background="@color/btnColor"
         android:textColor="@android:color/background_light"
         android:onClick="ChangeToPreferenceSetter"/>
 
@@ -43,7 +43,7 @@
         android:padding="10dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/btn_aggregate"
-        android:background="@color/colorPrimary"
+        android:background="@color/btnColor"
         android:textColor="@android:color/background_light"
         android:onClick="ChangeToAggregate"/>
 

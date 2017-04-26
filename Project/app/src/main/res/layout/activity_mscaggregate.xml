@@ -1,13 +1,321 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_mscaggregate"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.saad.project.MSCAggregate">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_bsaggregate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.saad.project.BSAggregate"
+        android:background="@color/bgColor">
 
-</RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/pucit_logo"
+            android:id="@+id/pucit_logo"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PUCIT MSc Aggregate Calculator"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:id="@+id/bs_aggregate_heading"
+            android:layout_below="@+id/pucit_logo"/>
+
+        <TextView
+            android:text="Matric Marks"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_matric_marks"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/bs_aggregate_heading"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="12"
+            android:id="@+id/et_matric_marks"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_matric_marks"
+            android:layout_alignBottom="@+id/tv_matric_marks"
+            android:layout_toRightOf="@+id/tv_matric_marks"
+            android:layout_toEndOf="@+id/tv_matric_marks"
+            android:hint="E.G 970"/>
+
+        <TextView
+            android:text="Total Matric Marks"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_total_matric_marks"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/tv_matric_marks"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="12"
+            android:id="@+id/et_total_matric_marks"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_total_matric_marks"
+            android:layout_alignBottom="@+id/tv_total_matric_marks"
+            android:layout_toRightOf="@+id/tv_total_matric_marks"
+            android:layout_toEndOf="@+id/tv_total_matric_marks"
+            android:text="1100"/>
+
+
+        <TextView
+            android:text="Inter Marks"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_fsc_marks"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/tv_total_matric_marks" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="12"
+            android:id="@+id/et_fsc_marks"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_fsc_marks"
+            android:layout_alignBottom="@+id/tv_fsc_marks"
+            android:layout_toRightOf="@+id/tv_fsc_marks"
+            android:layout_toEndOf="@+id/tv_fsc_marks"
+            android:hint="E.G 935"/>
+
+        <TextView
+            android:text="Total Inter Marks"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_total_fsc_marks"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/tv_fsc_marks" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="12"
+            android:id="@+id/et_total_fsc_marks"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_total_fsc_marks"
+            android:layout_alignBottom="@+id/tv_total_fsc_marks"
+            android:layout_toRightOf="@+id/tv_total_fsc_marks"
+            android:layout_toEndOf="@+id/tv_total_fsc_marks"
+            android:text="1100"/>
+
+        <TextView
+            android:text="Bechelors Marks"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_bech"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/tv_total_fsc_marks" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="12"
+            android:id="@+id/et_bech"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_bech"
+            android:layout_alignBottom="@+id/tv_bech"
+            android:layout_toRightOf="@+id/tv_bech"
+            android:layout_toEndOf="@+id/tv_bech"
+            android:hint="E.G 685"/>
+
+        <TextView
+            android:text="Total Bechelors Marks"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_total_bech_marks"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/tv_bech" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="12"
+            android:id="@+id/et_total_bech_marks"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_total_bech_marks"
+            android:layout_alignBottom="@+id/tv_total_bech_marks"
+            android:layout_toRightOf="@+id/tv_total_bech_marks"
+            android:layout_toEndOf="@+id/tv_total_bech_marks"
+            android:text="850"/>
+
+        <TextView
+            android:text="Year of Passing"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_year_of_passing"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/tv_total_bech_marks" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_passing_year"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBottom="@+id/tv_year_of_passing"
+            android:layout_toRightOf="@+id/tv_year_of_passing"
+            android:layout_toEndOf="@+id/tv_year_of_passing"
+            android:entries="@array/enter_passing_year"/>
+
+        <TextView
+            android:text="Test Marks"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_entery_test_marks"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/tv_year_of_passing" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="12"
+            android:id="@+id/et_entery_test_marks"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_entery_test_marks"
+            android:layout_alignBottom="@+id/tv_entery_test_marks"
+            android:layout_toRightOf="@+id/tv_entery_test_marks"
+            android:layout_toEndOf="@+id/tv_entery_test_marks"
+            android:hint="E.G 33.75"/>
+
+        <CheckBox
+            android:text="Are you Hafiz-e-Quran"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check_hafiz"
+            android:textSize="18sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tv_entery_test_marks"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_calculate"
+            android:text="Calculate"
+            android:layout_centerHorizontal="true"
+            android:background="@color/btnColor"
+            android:layout_below="@id/check_hafiz"
+            android:layout_marginTop="15dp"
+            android:onClick="calculateBS"/>
+
+        <TextView
+            android:text="Morning Aggregate:"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_mornig_aggregate"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/btn_calculate" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/tv_moring_aggregate_result"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_mornig_aggregate"
+            android:layout_alignBottom="@+id/tv_mornig_aggregate"
+            android:layout_toRightOf="@+id/tv_mornig_aggregate"
+            android:layout_toEndOf="@+id/tv_mornig_aggregate"
+            android:text="0.0%"/>
+
+        <TextView
+            android:text="Afternoon Aggregate:"
+            android:layout_width="170dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tv_afternoon_aggregate"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/tv_moring_aggregate_result" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/tv_afternoon_aggregate_result"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/tv_afternoon_aggregate"
+            android:layout_alignBottom="@+id/tv_afternoon_aggregate"
+            android:layout_toRightOf="@+id/tv_afternoon_aggregate"
+            android:layout_toEndOf="@+id/tv_afternoon_aggregate"
+            android:text="0.0%"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>

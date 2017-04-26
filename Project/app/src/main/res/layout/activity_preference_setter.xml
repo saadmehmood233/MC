@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_preference_setter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saad.project.PreferenceSetter"
+    android:background="@color/bgColor">
+
+
+    <ImageView
+        android:src="@mipmap/pucit_logo"
+        android:id="@+id/iv_logo"
+        android:minHeight="0dp"
+        android:layout_height="200dp"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginTop="15dp"
+        android:text="How are you?"
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group"
+        android:layout_below="@+id/question"
+        android:orientation="vertical">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fine"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/option1"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Fine"
+            android:textSize="18dp"
+            android:layout_below="@+id/option1"
+            android:layout_marginTop="15dp"
+            android:id="@+id/option2"/>
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Previous"
+        android:background="@color/btnColor"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="15dp"
+        android:id="@+id/prev"
+        android:onClick="prevQuestion"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Next"
+        android:background="@color/btnColor"
+        android:id="@+id/next"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/radio_group"
+        android:layout_alignParentRight="true"
+        android:onClick="nextQuestion"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@color/btnColor"
+        android:padding="10dp"
+        android:id="@+id/submit"
+        android:layout_below="@id/next"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Project</string>
+
+    <string-array name="enter_passing_year">
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+    </string-array>
 </resources>
